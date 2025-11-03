@@ -13,7 +13,7 @@ export default function RootLayout({
       <body style={{
         margin: 0,
         fontFamily: "Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif",
-        color: "#f8fafc",
+        color: "#383333",
         background: "linear-gradient(to bottom, #280a7b, #980606)",
       }}>
         <div style={{

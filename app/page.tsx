@@ -84,16 +84,17 @@ export default function HomePage() {
       parts.push(`Price is at ${(pos * 100).toFixed(0)}% of its 52-week range.`);
     }
     if (news.length) {
-      const top = news.slice(0, 3).map(n => `- ${n.title}`).join("\n");
-      parts.push(`Recent headlines that may be influencing the move:\n${top}`);
+      parts.push("Recent headlines may be influencing the move.");
     }
     return parts.join(" \n");
   }, [quote, metrics, news]);
 
   return (
     <main style={{ maxWidth: 1100, margin: "0 auto", padding: "24px" }}>
-      <h1 style={{ margin: 0, fontSize: 28, fontWeight: 700 }}>MarketMoves: Stock Analyzer</h1>
-      <p style={{ marginTop: 8, color: "#334155" }}>Enter a US ticker (e.g., AAPL, MSFT, NVDA)</p>
+      <h1 style={{ margin: 0, fontSize: 28, fontWeight: 700, textAlign: "center", color: "#ffffff" }}>
+        MarketMoves: Stock Analyzer
+      </h1>
+      <p style={{ marginTop: 8, color: "#ffffff" }}>Enter a US ticker (e.g., AAPL, MSFT, NVDA)</p>
 
       <div style={{ display: "flex", gap: 12, marginTop: 16 }}>
         <input
