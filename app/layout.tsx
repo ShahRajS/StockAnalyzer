@@ -1,3 +1,5 @@
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 export const metadata = {
   title: "MarketMoves Stock Analyzer",
   description: "Enter a US stock ticker to see price, metrics, trend, and explanations.",
